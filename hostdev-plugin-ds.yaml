@@ -17,8 +17,8 @@ spec:
       hostNetwork: true
       containers:
       - name: hostdev
-        image: ccr.ccs.tencentyun.com/paas/hostdev:latest
-        args: ["--devs", "/dev/mem:r"]
+        image: dtp263/k8s-hostdev-plugin
+        args: ["--devs", "/dev/mem:rwm", "/dev/gpiomem:rwm"]
         securityContext:
           privileged: true
         volumeMounts:

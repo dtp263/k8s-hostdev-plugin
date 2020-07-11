@@ -4,13 +4,13 @@ import (
 	"os"
 	"syscall"
 
-	log "github.com/Sirupsen/logrus"
-	"github.com/fsnotify/fsnotify"
-	pluginapi "k8s.io/kubernetes/pkg/kubelet/apis/deviceplugin/v1beta1"
 	"fmt"
 	"time"
-)
 
+	"github.com/fsnotify/fsnotify"
+	log "github.com/sirupsen/logrus"
+	pluginapi "k8s.io/kubernetes/pkg/kubelet/apis/deviceplugin/v1beta1"
+)
 
 func main() {
 	hostDevPluginConfig, err := loadConfig()

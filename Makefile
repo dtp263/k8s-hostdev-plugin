@@ -1,4 +1,4 @@
-REPO ?= ccr.ccs.tencentyun.com/paas
+REPO ?= dtp263/
 TAG ?= 0.1
 IMG=$(REPO)/k8s-hostdev-plugin:$(TAG)
 BIN=k8s-hostdev-plugin
